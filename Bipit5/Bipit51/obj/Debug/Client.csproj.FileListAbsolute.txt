@@ -1,0 +1,28 @@
+C:\Users\User\source\repos\Bipit51\Bipit51\bin\Debug\Bipit51.exe.config
+C:\Users\User\source\repos\Bipit51\Bipit51\bin\Debug\Bipit51.exe
+C:\Users\User\source\repos\Bipit51\Bipit51\bin\Debug\Bipit51.pdb
+C:\Users\User\source\repos\Bipit51\Bipit51\obj\Debug\Client.csprojAssemblyReference.cache
+C:\Users\User\source\repos\Bipit51\Bipit51\obj\Debug\Bipit51.Form1.resources
+C:\Users\User\source\repos\Bipit51\Bipit51\obj\Debug\Bipit51.Properties.Resources.resources
+C:\Users\User\source\repos\Bipit51\Bipit51\obj\Debug\Client.csproj.GenerateResource.cache
+C:\Users\User\source\repos\Bipit51\Bipit51\obj\Debug\Client.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Bipit51\Bipit51\obj\Debug\Bipit51.exe
+C:\Users\User\source\repos\Bipit51\Bipit51\obj\Debug\Bipit51.pdb
+D:\University\3 курс\БИПиТ\практики\Bipit5\Bipit51\bin\Debug\Bipit51.exe.config
+D:\University\3 курс\БИПиТ\практики\Bipit5\Bipit51\bin\Debug\Bipit51.exe
+D:\University\3 курс\БИПиТ\практики\Bipit5\Bipit51\bin\Debug\Bipit51.pdb
+D:\University\3 курс\БИПиТ\практики\Bipit5\Bipit51\obj\Debug\Bipit51.Form1.resources
+D:\University\3 курс\БИПиТ\практики\Bipit5\Bipit51\obj\Debug\Bipit51.Properties.Resources.resources
+D:\University\3 курс\БИПиТ\практики\Bipit5\Bipit51\obj\Debug\Client.csproj.GenerateResource.cache
+D:\University\3 курс\БИПиТ\практики\Bipit5\Bipit51\obj\Debug\Client.csproj.CoreCompileInputs.cache
+D:\University\3 курс\БИПиТ\практики\Bipit5\Bipit51\obj\Debug\Bipit51.exe
+D:\University\3 курс\БИПиТ\практики\Bipit5\Bipit51\obj\Debug\Bipit51.pdb
+C:\Users\Алиса\Desktop\БИПИТ даниель\Bipit5\Bipit5\Bipit51\bin\Debug\Bipit51.exe.config
+C:\Users\Алиса\Desktop\БИПИТ даниель\Bipit5\Bipit5\Bipit51\bin\Debug\Bipit51.exe
+C:\Users\Алиса\Desktop\БИПИТ даниель\Bipit5\Bipit5\Bipit51\bin\Debug\Bipit51.pdb
+C:\Users\Алиса\Desktop\БИПИТ даниель\Bipit5\Bipit5\Bipit51\obj\Debug\Bipit51.Form1.resources
+C:\Users\Алиса\Desktop\БИПИТ даниель\Bipit5\Bipit5\Bipit51\obj\Debug\Bipit51.Properties.Resources.resources
+C:\Users\Алиса\Desktop\БИПИТ даниель\Bipit5\Bipit5\Bipit51\obj\Debug\Client.csproj.GenerateResource.cache
+C:\Users\Алиса\Desktop\БИПИТ даниель\Bipit5\Bipit5\Bipit51\obj\Debug\Client.csproj.CoreCompileInputs.cache
+C:\Users\Алиса\Desktop\БИПИТ даниель\Bipit5\Bipit5\Bipit51\obj\Debug\Bipit51.exe
+C:\Users\Алиса\Desktop\БИПИТ даниель\Bipit5\Bipit5\Bipit51\obj\Debug\Bipit51.pdb
