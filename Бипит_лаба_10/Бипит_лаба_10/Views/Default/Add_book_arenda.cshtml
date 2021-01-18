@@ -1,0 +1,31 @@
+﻿@model Arenda_book
+@{
+    ViewBag.Title = "Add_book_arenda";
+}
+
+@using (Html.BeginForm())
+{
+    <fieldset>
+        @Html.HiddenFor(m => m.Id)
+        <p>
+            @Html.LabelFor(model => model.FIO.Fio1, "ФИО")
+            <br />
+            @Html.DropDownListFor(model => model.id_fio, ViewBag.FIO as SelectList)
+            <br />
+            @Html.LabelFor(model => model.Book.Name_book, "Название книги")
+            <br />
+            @Html.DropDownListFor(model => model.id_book, ViewBag.Book as SelectList)
+            <br />
+            @Html.LabelFor(model => model.Data_1, "Дата начало")
+            <br />
+            @Html.EditorFor(model => model.Data_1)
+            <br />
+            @Html.LabelFor(model => model.Data_2, "Дата конца")
+            <br />
+            @Html.EditorFor(model => model.Data_1)
+            <br />
+        </p>
+        <p><input type="submit" value="Редактировать" /></p>
+    </fieldset>
+}
+

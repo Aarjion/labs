@@ -1,0 +1,20 @@
+﻿@model Book
+@{
+    ViewBag.Title = "Add_book";
+}
+
+@using (Html.BeginForm())
+{
+<fieldset>
+    @Html.LabelFor(model => model.Book_avtor, "Автор")
+    <br />
+    @Html.EditorFor(model => model.Book_avtor)
+    <br />
+    @Html.LabelFor(model => model.Name_book, "Название книги")
+    <br />
+    @Html.EditorFor(model => model.Name_book)
+    <br />
+    <input type="submit" value="Добавить" />
+</fieldset>
+}
+

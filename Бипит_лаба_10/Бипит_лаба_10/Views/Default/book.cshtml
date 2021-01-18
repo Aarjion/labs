@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "book";
+}
+
+<h2>Книги</h2>
+<div>
+    <table>
+        <tr>
+            <td>ID</td>
+            <td>Автор</td>
+            <td>Название книги</td>
+            @if (User.Identity.IsAuthenticated)
+            {
+                <td></td>
+                <td></td>
+            }
+        </tr>
+        @foreach (var book in ViewBag.Book)
+        {
+            <tr>
+                <td>@book.Id</td>
+                <td>@book.Book_avtor</td>
+                <td>@book.Name_book</td>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <td> @Html.ActionLink("Редактировать", "Edit_book", new { Id = book.Id }) </td>
+                    <td>@Html.ActionLink("Удалить", "Delete_book", new { Id = book.Id }) </td>
+                }
+            </tr>
+        }
+    </table>
+    <br />
+    @if (User.Identity.IsAuthenticated)
+    {
+        @Html.ActionLink("Добавить", "Add_book")
+    }
+</div>
+

@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "fio";
+}
+
+<h2>ФИО</h2>
+<div>
+    <table>
+        <tr>
+            <td>ID</td>
+            <td>ФИО</td>
+            @if (User.Identity.IsAuthenticated)
+            {
+                <td></td>
+                <td></td>
+            }
+        </tr>
+        @foreach (var fio in ViewBag.Fio)
+        {
+            <tr>
+                <td>@fio.Id</td>
+                <td>@fio.Fio1</td>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <td> @Html.ActionLink("Редактировать", "Edit_fio", new { Id = fio.Id }) </td>
+                    <td>@Html.ActionLink("Удалить", "Delete_fio", new { Id = fio.Id }) </td>
+                }
+            </tr>
+        }
+    </table>
+    <br />
+    @if (User.Identity.IsAuthenticated)
+    {
+        @Html.ActionLink("Добавить", "Add_fio")
+    }
+</div>

@@ -1,0 +1,23 @@
+﻿@model Book
+@{
+    ViewBag.Title = "Edit_book";
+}
+
+@using (Html.BeginForm())
+{
+    <fieldset>
+        @Html.HiddenFor(m => m.Id)
+        <p>
+            @Html.LabelFor(model => model.Book_avtor, "Автор")
+            <br />
+            @Html.EditorFor(model => model.Book_avtor)
+            <br />
+            @Html.LabelFor(model => model.Name_book, "Название книги")
+            <br />
+            @Html.EditorFor(model => model.Name_book)
+            <br />
+        </p>
+        <p><input type="submit" value="Редактировать" /></p>
+    </fieldset>
+}
+
