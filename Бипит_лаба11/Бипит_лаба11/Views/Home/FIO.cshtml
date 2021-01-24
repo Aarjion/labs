@@ -1,0 +1,97 @@
+﻿<div id="table" class="row"></div>
+<div id="AddBlock">
+
+    <div class=" form-group row">
+        <label for="name" class="col-sm-3 col-form-label">ФИО</label>
+        <input type="text" class="form-control" id="selectE">
+    </div>
+
+   
+
+    <div class="col">
+        <button id="Add" class="btn btn-info">Добавить</button>
+    </div>
+</div>
+@section scripts{
+    <script src="http://www.datejs.com/build/date.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function () {
+            GetAll();
+
+            $("#Add").click(function (event) {
+                event.preventDefault();
+                Add();
+            });
+
+        });
+
+
+        function GetAll() {
+            $.ajax({
+                url: '/api/GetFIO',
+                type: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    FillTable(data);
+                },
+                error: function (x, y, z) {
+                    alert(x + '\n' + y + '\n' + z);
+                }
+            });
+        }
+
+        function Add() {
+
+            var tr = {
+                FIO1 : $('#selectE').val(),
+
+            };
+
+            $.ajax({
+                url: '/api/AddFIO',
+                type: 'POST',
+                data: JSON.stringify(tr),
+                contentType: "application/json;charset=utf-8",
+                success: function (data) {
+                    GetAll();
+                },
+                error: function (x, y, z) {
+                    alert(x + '\n' + y + '\n' + z);
+                }
+            });
+        }
+        function Delete(id) {
+
+            $.ajax({
+                url: '/api/DeleteFIO/' + id,
+                type: 'DELETE',
+                contentType: "application/json;charset=utf-8",
+                success: function (data) {
+                    GetAll();
+                },
+                error: function (x, y, z) {
+                    alert(x + '\n' + y + '\n' + z);
+                }
+            });
+        }
+
+        function DeleteItem(el) {
+            var id = $(el).attr('data-item');
+            Delete(id);
+        }
+
+
+        function FillTable(data) {
+            var strResult =
+                "<table class='table'><th></th><th>ID</th><th>ФИО</th>";
+            $.each(data, function (index, item) {
+
+                strResult += " <tr><td><a id='delItem' data-item='" + item.Id + "' onclick='DeleteItem(this);' >Удалить</a></td>" +
+                    " <td>" + item.Id + "</td><td> " + item.FIO1 + "</td></tr>";
+            });
+            strResult += "</table>";
+            $("#table").html(strResult);
+
+        }
+    </script>
+}
